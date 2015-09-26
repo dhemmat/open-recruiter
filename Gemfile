@@ -36,6 +36,8 @@ gem 'bootstrap-sass', '~> 3.3.5'
 gem 'haml-rails'
 gem 'devise', '~> 3.4.0'
 
+gem 'sextant'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'

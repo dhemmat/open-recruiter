@@ -1,0 +1,8 @@
+%tr
+  %td= candidate.name
+  %td= link_to 'Download', candidate.cv_link
+  %td= candidate.owner.name
+  %td= 
+    link_to 'View', candidate_path(candidate) 
+    \/ 
+    link_to 'Edit', edit_candidate_path(candidate)

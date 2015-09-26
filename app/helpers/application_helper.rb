@@ -10,6 +10,8 @@ module ApplicationHelper
         "alert-warning" # Yellow
       when :notice
         "alert-info" # Blue
+      when :timedout
+        "hidden"
       else
         flash_type.to_s
     end

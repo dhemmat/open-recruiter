@@ -6,6 +6,7 @@
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
   %body
+    = render partial: "shared/navbar" if current_user
     .container
       = render partial: "shared/flash_messages", flash: flash
       .content

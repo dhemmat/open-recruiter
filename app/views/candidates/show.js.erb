@@ -1,0 +1,3 @@
+$("#candidate-<%= escape_javascript(@candidate.id.to_s)%>").
+  after("<%= escape_javascript(render partial:'show', locals: {candidate: @candidate}) %>");
+$

@@ -1,12 +1,14 @@
-%h1 Candidates
+%h1.title Candidates
 
-%table.table
-  %thead
-    %tr
-      %th Name
-      %th CV
-      %th Assigned to
-      %th Actions
-  %tbody
-    = render @candidates
+.panel.panel-default
+  .panel-body
+    %table.table
+      %thead
+        %tr
+          %th Name
+          %th CV
+          %th Assigned to
+          %th Actions
+      %tbody
+        = render @candidates
 

@@ -1,8 +1,8 @@
-%tr
+%tr{id: candidate.id}
   %td= candidate.name
   %td= link_to 'Download', candidate.cv_link
   %td= candidate.owner.name
-  %td= 
-    link_to 'View', candidate_path(candidate) 
+  %td 
+    = link_to 'Details', candidate_path(candidate), remote: true
     \/ 
-    link_to 'Edit', edit_candidate_path(candidate)
+    = link_to 'Edit', edit_candidate_path(candidate)
